@@ -1,10 +1,14 @@
-* {
+* {   
     font-family: "Roboto", sans-serif;
+    font-size: 18px;
+
 }
 
 .headerLogo {
     font-size: 32px;
     font-weight: 800;
+    flex-shrink: 0;
+    margin-right:20px;
 }
 
 .header {
@@ -14,8 +18,9 @@
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
+    flex:0;
 }
 
 ul {
@@ -24,6 +29,7 @@ ul {
     margin: 0;
     padding: 0;
     gap:20px;
+    flex-shrink: 0;
 }
 
 li {
@@ -40,30 +46,80 @@ a {
     background-color: #1f2937;
     color: white;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-left: 300px;
-    padding-right: 300px;
     flex-grow:1;
+    flex-basis: 0;
+    padding-top:60px;
+    padding-bottom: 60px;
+    gap:100px;
+    flex-wrap:wrap;
 }
 
 .heroimage {
     height: 200px;
     width: 500px;
+    flex-shrink: 0;
 }
 
 .herocontainer {
     display:flex;
     flex-direction: column;
-    flex-basis: 300px;
-    flex-shrink:0;
+    flex-shrink: 0;
+
 }
 
 .herotitle {
     font-size: 42px;
-    font-weight: 600;
-    padding-bottom: 32px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    flex-shrink: 0;
 }
 
 .herotext {
+    max-width: 600px;
+    padding-bottom: 32px;
+}
+
+.button {
+    background-color: #3882F6;
+    color:white;
+    width: 100px;
+    padding:10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.information {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:120px;
+}
+
+.card1, .card2, .card3, .card4 {
+    width: 200px;
+    text-align: center;
+}
+
+
+.infoimage {
+    border-radius: 8px;
+}
+
+.informationheader {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
